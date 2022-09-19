@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Post: Decodable {
     var userID: Int
     var id: Int

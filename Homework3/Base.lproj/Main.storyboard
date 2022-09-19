@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhW-g1-o1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2717" y="1339"/>
+            <point key="canvasLocation" x="1445" y="2025"/>
         </scene>
         <!--Item-->
         <scene sceneID="aV7-t3-V50">
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THG-AD-xGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4408.695652173913" y="1338.6160714285713"/>
+            <point key="canvasLocation" x="2361" y="2025"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wda-DM-C1v">
@@ -50,22 +50,24 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dJ8-Em-nGF">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Mye-u5-53s" kind="relationship" relationship="viewControllers" id="Tpl-Br-idc"/>
-                        <segue destination="XuH-iu-WCv" kind="relationship" relationship="viewControllers" id="hgE-mv-sOb"/>
-                        <segue destination="FxL-j3-BP5" kind="relationship" relationship="viewControllers" id="DS3-CG-ZRj"/>
+                        <segue destination="A1n-jF-3vn" kind="relationship" relationship="viewControllers" id="dt7-0O-9pe"/>
+                        <segue destination="hTI-Xc-XL7" kind="relationship" relationship="viewControllers" id="wsv-Q3-gYo"/>
+                        <segue destination="ysw-zo-0gH" kind="relationship" relationship="viewControllers" id="UoU-Zg-SyX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZh-Mf-6Uv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1445" y="387"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Photo-->
         <scene sceneID="Bki-7h-Bnl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTI-Xc-XL7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photo" image="photo" catalog="system" id="Bjn-bW-JUU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v9k-V1-bf3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -78,12 +80,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INe-zR-7HZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="1339"/>
+            <point key="canvasLocation" x="1445" y="1229"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--To Do-->
         <scene sceneID="kno-td-8oV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ysw-zo-0gH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="To Do" image="square.and.pencil" catalog="system" id="Upe-Eg-VxU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fzP-7Y-8WZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -96,12 +99,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ozx-ri-rca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3642.0289855072465" y="1338.6160714285713"/>
+            <point key="canvasLocation" x="2361" y="1229"/>
         </scene>
         <!--Item-->
         <scene sceneID="WLL-Xh-FDO">
             <objects>
-                <viewController id="FxL-j3-BP5" customClass="PostsVC" customModule="PostsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FxL-j3-BP5" customClass="PostViewController" customModule="Homework3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gou-z4-Og3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,7 +130,7 @@
                                 <rect key="frame" x="0.0" y="80" width="414" height="816"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="53M-1c-MWk" customClass="PostCell" customModule="PostsDemo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="53M-1c-MWk" customClass="PostTableViewCell" customModule="Homework3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="53M-1c-MWk" id="SNX-q1-4l6">
@@ -179,6 +182,12 @@
                                                 <constraint firstItem="ZSU-wj-Whf" firstAttribute="leading" secondItem="SNX-q1-4l6" secondAttribute="leadingMargin" id="tik-ui-wHo"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bodyLabel" destination="KvE-gc-XHx" id="n0S-sH-uCC"/>
+                                            <outlet property="idLabel" destination="iwl-pz-myk" id="caS-ly-2if"/>
+                                            <outlet property="titleLabel" destination="OOe-Jn-ap2" id="YZH-Ui-Sov"/>
+                                            <outlet property="useIDLabel" destination="7l3-y9-8KY" id="kqe-aB-lhG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -197,15 +206,19 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="VBU-WC-7zH"/>
                     <navigationItem key="navigationItem" id="eAT-le-dgx"/>
+                    <connections>
+                        <outlet property="postTableView" destination="YIw-uj-y3P" id="t61-AX-c20"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2am-gP-qkX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="1339"/>
+            <point key="canvasLocation" x="529" y="2025"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Post-->
         <scene sceneID="vUB-sK-ddr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A1n-jF-3vn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Post" image="person.fill" catalog="system" id="upI-Au-UMH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ooh-bF-lfa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -218,15 +231,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwY-Ql-tWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="1339"/>
+            <point key="canvasLocation" x="529" y="1230"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="qgb-uG-3zr"/>
-        <segue reference="hgE-mv-sOb"/>
-        <segue reference="vZa-8y-pn2"/>
-    </inferredMetricsTieBreakers>
     <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
