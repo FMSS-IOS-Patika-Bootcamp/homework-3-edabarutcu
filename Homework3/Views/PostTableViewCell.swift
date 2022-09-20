@@ -19,7 +19,7 @@ class PostTableViewCell: UITableViewCell {
         // Initialization code
     }
     func setUpView(post: Post) {
-        useIDLabel.text = "#\(post.id)"
+        idLabel.text = "#\(post.id)"
         useIDLabel.text = "User \(post.userID)"
         titleLabel.text = post.title
         bodyLabel.text = post.body
