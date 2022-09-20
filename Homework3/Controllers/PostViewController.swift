@@ -49,9 +49,7 @@ class PostViewController: UIViewController {
                 debugPrint("Failure to get data.")
             }
         }.resume()
-        
     }
-
 }
 
 extension PostViewController: UITableViewDelegate, UITableViewDataSource {

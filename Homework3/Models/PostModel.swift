@@ -17,5 +17,4 @@ struct Post: Decodable {
         case userID = "userId"
         case id, title, body
     }
-    
 }
