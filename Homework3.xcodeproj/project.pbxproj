@@ -21,6 +21,9 @@
 		D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D262623B28D8A42400822855 /* PhotosCollectionViewCell.swift */; };
 		D264706228D9963F007144DF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D264706128D9963F007144DF /* .gitignore */; };
 		D284280628D89A470040E304 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284280528D89A470040E304 /* PhotoModel.swift */; };
+		D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */; };
+		D29255CA28D9F3EC00EDA4FE /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */; };
+		D29255CD28D9F42E00EDA4FE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		D262623B28D8A42400822855 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		D264706128D9963F007144DF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D284280528D89A470040E304 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		D29255CC28D9F42E00EDA4FE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		D213FCBA28D8473000B62AAA /* Homework3 */ = {
 			isa = PBXGroup;
 			children = (
+				D29255C628D9F34E00EDA4FE /* Core Data */,
 				D213FCD628D8631E00B62AAA /* Supporting Files */,
 				D21BC76728D8AF09000ECE29 /* Network */,
 				D213FCD328D862E300B62AAA /* Views */,
@@ -110,6 +117,7 @@
 			children = (
 				D213FCD028D862AA00B62AAA /* PostModel.swift */,
 				D284280528D89A470040E304 /* PhotoModel.swift */,
+				D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */,
 				D264706128D9963F007144DF /* .gitignore */,
 			);
 			path = Models;
@@ -150,6 +158,15 @@
 				D21BC76828D8AF38000ECE29 /* ApiManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		D29255C628D9F34E00EDA4FE /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */,
+				D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,12 +289,15 @@
 				D213FCC028D8473000B62AAA /* PostViewController.swift in Sources */,
 				D21BC76928D8AF38000ECE29 /* ApiManager.swift in Sources */,
 				D21BC76628D8AE48000ECE29 /* PhotosCollectionView.swift in Sources */,
+				D29255CA28D9F3EC00EDA4FE /* ToDoModel.swift in Sources */,
 				D213FCD128D862AA00B62AAA /* PostModel.swift in Sources */,
 				D213FCD528D8631000B62AAA /* PostTableViewCell.swift in Sources */,
+				D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */,
 				D284280628D89A470040E304 /* PhotoModel.swift in Sources */,
 				D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */,
 				D213FCBC28D8473000B62AAA /* AppDelegate.swift in Sources */,
 				D213FCBE28D8473000B62AAA /* SceneDelegate.swift in Sources */,
+				D29255CD28D9F42E00EDA4FE /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +519,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D29255CC28D9F42E00EDA4FE /* Model.xcdatamodel */,
+			);
+			currentVersion = D29255CC28D9F42E00EDA4FE /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D213FCB028D8473000B62AAA /* Project object */;
 }
