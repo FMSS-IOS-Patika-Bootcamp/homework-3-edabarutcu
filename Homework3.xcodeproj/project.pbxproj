@@ -100,8 +100,6 @@
 				D213FCD228D862D100B62AAA /* Controllers */,
 				D213FCCF28D8628C00B62AAA /* Models */,
 				D213FCC128D8473000B62AAA /* Main.storyboard */,
-				D213FCC428D8473600B62AAA /* Assets.xcassets */,
-				D213FCC628D8473600B62AAA /* LaunchScreen.storyboard */,
 				D213FCC928D8473600B62AAA /* Info.plist */,
 			);
 			path = Homework3;
@@ -140,6 +138,8 @@
 			children = (
 				D213FCBB28D8473000B62AAA /* AppDelegate.swift */,
 				D213FCBD28D8473000B62AAA /* SceneDelegate.swift */,
+				D213FCC428D8473600B62AAA /* Assets.xcassets */,
+				D213FCC628D8473600B62AAA /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
