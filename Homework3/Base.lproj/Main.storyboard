@@ -82,11 +82,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POSTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSp-ct-Cod">
                                         <rect key="frame" x="168" y="39" width="78" height="33"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="uSp-ct-Cod" secondAttribute="bottom" constant="8" id="B4A-Rd-214"/>
                                     <constraint firstAttribute="height" constant="80" id="DqQ-cU-9hS"/>
@@ -293,7 +293,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="To Do" id="lnP-LD-hYC">
                         <barButtonItem key="rightBarButtonItem" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" style="plain" id="GZd-LI-FzS">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="JD9-Ch-UmP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="JD9-Ch-UmP">
                                 <rect key="frame" x="302" y="5" width="92" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -373,7 +373,7 @@
         <!--Complete ToDo View Controller-->
         <scene sceneID="TqN-Gz-vgh">
             <objects>
-                <viewController id="vkb-lc-kTJ" userLabel="Complete ToDo View Controller" customClass="CompleteToDoViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vkb-lc-kTJ" userLabel="Complete ToDo View Controller" customClass="CompleteToDoViewController" customModule="Homework3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CDb-Oo-7QY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -416,6 +416,9 @@
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
