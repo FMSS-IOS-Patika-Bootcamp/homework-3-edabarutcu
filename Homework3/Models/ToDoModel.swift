@@ -10,5 +10,5 @@ import Foundation
 
 class ToDoModel {
     var name: String = ""
-    var isImportant: Bool = false
+    var isChecked: Bool = false
 }

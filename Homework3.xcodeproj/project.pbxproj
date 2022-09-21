@@ -24,6 +24,8 @@
 		D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */; };
 		D29255CA28D9F3EC00EDA4FE /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */; };
 		D29255CD28D9F42E00EDA4FE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */; };
+		D297DC5D28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */; };
+		D297DC5E28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297DC5C28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		D29255CC28D9F42E00EDA4FE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToDoItem+CoreDataProperties.swift"; path = "/Users/detaysoft/Desktop/HW/homework-3-edabarutcu/Homework3/Core Data/ToDoItem+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		D297DC5C28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToDoItem+CoreDataClass.swift"; path = "/Users/detaysoft/Desktop/HW/homework-3-edabarutcu/Homework3/Core Data/ToDoItem+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */,
+				D297DC5C28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift */,
+				D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */,
 				D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */,
 			);
 			path = "Core Data";
@@ -294,7 +300,9 @@
 				D213FCD528D8631000B62AAA /* PostTableViewCell.swift in Sources */,
 				D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */,
 				D284280628D89A470040E304 /* PhotoModel.swift in Sources */,
+				D297DC5E28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift in Sources */,
 				D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */,
+				D297DC5D28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift in Sources */,
 				D213FCBC28D8473000B62AAA /* AppDelegate.swift in Sources */,
 				D213FCBE28D8473000B62AAA /* SceneDelegate.swift in Sources */,
 				D29255CD28D9F42E00EDA4FE /* Model.xcdatamodeld in Sources */,
