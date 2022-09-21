@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A449897649BB9ED6902670B /* Pods_Homework3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B57E8A7D309211EEA41DA51 /* Pods_Homework3.framework */; };
+		D20172C928DB3761002005F1 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20172C828DB3761002005F1 /* ToDoListTableViewController.swift */; };
 		D213FCBC28D8473000B62AAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213FCBB28D8473000B62AAA /* AppDelegate.swift */; };
 		D213FCBE28D8473000B62AAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213FCBD28D8473000B62AAA /* SceneDelegate.swift */; };
 		D213FCC028D8473000B62AAA /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213FCBF28D8473000B62AAA /* PostViewController.swift */; };
@@ -32,6 +33,7 @@
 		1B57E8A7D309211EEA41DA51 /* Pods_Homework3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C432047CE1D4D0F771A676 /* Pods-Homework3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework3.debug.xcconfig"; path = "Target Support Files/Pods-Homework3/Pods-Homework3.debug.xcconfig"; sourceTree = "<group>"; };
 		70D41300128558CA7D80E74C /* Pods-Homework3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework3.release.xcconfig"; path = "Target Support Files/Pods-Homework3/Pods-Homework3.release.xcconfig"; sourceTree = "<group>"; };
+		D20172C828DB3761002005F1 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		D213FCB828D8473000B62AAA /* Homework3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D213FCBB28D8473000B62AAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D213FCBD28D8473000B62AAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				D213FCBF28D8473000B62AAA /* PostViewController.swift */,
 				D21BC76528D8AE48000ECE29 /* PhotosCollectionView.swift */,
+				D20172C828DB3761002005F1 /* ToDoListTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				D297DC5E28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift in Sources */,
 				D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */,
 				D297DC5D28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift in Sources */,
+				D20172C928DB3761002005F1 /* ToDoListTableViewController.swift in Sources */,
 				D213FCBC28D8473000B62AAA /* AppDelegate.swift in Sources */,
 				D213FCBE28D8473000B62AAA /* SceneDelegate.swift in Sources */,
 				D29255CD28D9F42E00EDA4FE /* Model.xcdatamodeld in Sources */,

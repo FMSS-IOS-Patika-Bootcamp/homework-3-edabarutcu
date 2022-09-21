@@ -12,17 +12,13 @@ import Kingfisher
 private let reuseIdentifier = "PhotoCell"
 
 class PhotosCollectionView: UICollectionViewController {
+    
     let photosApi = "https://jsonplaceholder.typicode.com/photos"
     var photosArr : [Photo] = []
     //  let activityIndicatorView = UIActivityIndicatorView(style: .medium)
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        activityIndicatorView.center = view.center
-        //        activityIndicatorView.startAnimating()
-        //        view.addSubview(activityIndicatorView)
-        //        collectionView.isHidden = true
-        //        activityIndicatorView.isHidden = false
         // Do any additional setup after loading the view.
         getPhotosApi()
     }
@@ -37,15 +33,10 @@ class PhotosCollectionView: UICollectionViewController {
                     self.photosArr = photos
                     
                     DispatchQueue.main.async {
-                        //                        self.activityIndicatorView.stopAnimating()
-                        //                        self.activityIndicatorView.isHidden = true
+                        
                         self.collectionView.reloadData()
-                        //                        self.collectionView.isHidden = false
                     }
-                    //                } else {
-                    //                   debugPrint("Failure to decode posts.")
                 }
-                
             }
         }
     }
