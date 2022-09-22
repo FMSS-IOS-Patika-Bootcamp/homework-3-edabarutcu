@@ -137,6 +137,19 @@ class ToDoListTableViewController: UITableViewController {
             getToDos()
         }
     }
+    
+    func deleteToDoItem(toDo toDoItem: ToDoItem) {
+        if let context  =
+            ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext) {
+            do {
+                try context.delete(toDoItem)
+            }
+            catch {
+                self.showAlert(message: "Data could not be saved!  Please try again.")
+            }
+        }
+    }
+    
     func showAlert(message: String) {
         let alertController = UIAlertController(title: "Oops!", message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -167,8 +180,17 @@ class ToDoListTableViewController: UITableViewController {
         let toDo = toDos[indexPath.row]
         performSegue(withIdentifier: "completeToDoSegue", sender: toDo)
     }
-    
 
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let toDoLine = toDos[indexPath.section]
+            deleteToDoItem(toDo: toDoLine)
+            toDos.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
 }
 
     
