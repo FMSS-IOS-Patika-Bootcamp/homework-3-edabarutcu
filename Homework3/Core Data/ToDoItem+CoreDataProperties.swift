@@ -19,5 +19,5 @@ extension ToDoItem {
     @NSManaged public var isChecked: Bool
     @NSManaged public var name: String?
     @NSManaged public var isImportant: Bool
-
+    @NSManaged public var createdDate: Date
 }

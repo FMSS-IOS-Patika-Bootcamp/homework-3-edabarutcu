@@ -276,12 +276,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" id="h8p-XJ-0Ne">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" textLabel="KLF-hA-yrZ" style="IBUITableViewCellStyleDefault" id="h8p-XJ-0Ne">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h8p-XJ-0Ne" id="pLR-jd-Rc8">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KLF-hA-yrZ">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -292,13 +301,7 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="To Do" id="lnP-LD-hYC">
-                        <barButtonItem key="rightBarButtonItem" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" style="plain" id="GZd-LI-FzS">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="JD9-Ch-UmP">
-                                <rect key="frame" x="302" y="5" width="92" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="rectangle.and.pencil.and.ellipsis" catalog="system"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="GZd-LI-FzS">
                             <connections>
                                 <segue destination="RPK-nD-Pxy" kind="show" id="C1L-P0-anW"/>
                             </connections>
@@ -306,12 +309,12 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="vkb-lc-kTJ" kind="show" id="MzF-Ms-08s"/>
+                        <segue destination="vkb-lc-kTJ" kind="show" identifier="completeToDoSegue" id="MzF-Ms-08s"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPr-AT-opY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="2025"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="2025"/>
         </scene>
         <!--Add To Do View Controller-->
         <scene sceneID="1yJ-ZN-UAO">
@@ -339,6 +342,9 @@
                                 <rect key="frame" x="189" y="337" width="36" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonDidTap:" destination="RPK-nD-Pxy" eventType="touchUpInside" id="E3B-gR-3gl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f5-nx-7lP" userLabel="Important Label">
                                 <rect key="frame" x="162" y="228" width="90.5" height="24"/>
@@ -365,6 +371,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mUy-KP-z6j"/>
+                    <connections>
+                        <outlet property="importantSwitch" destination="Mhl-uT-HT9" id="w2d-8k-Nv8"/>
+                        <outlet property="titleTextField" destination="pYJ-nR-Pod" id="YvG-iO-AG3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gA9-g9-ctM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,6 +398,9 @@
                                 <rect key="frame" x="164" y="180" width="86" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Complete"/>
+                                <connections>
+                                    <action selector="completeButtonDidTap:" destination="vkb-lc-kTJ" eventType="touchUpInside" id="MtF-QF-Elr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zrz-ga-EN5"/>
@@ -402,6 +415,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FjA-7M-gAt"/>
+                    <connections>
+                        <outlet property="completeToDoButton" destination="7fw-Tj-5s6" id="Hs7-wA-xGj"/>
+                        <outlet property="completeToDoLabel" destination="r2n-T5-8jY" id="CvD-8N-sIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEn-vl-ROW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,8 +428,6 @@
     <resources>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="photo" catalog="system" width="128" height="93"/>
-        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="81"/>
-        <image name="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" width="128" height="92"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

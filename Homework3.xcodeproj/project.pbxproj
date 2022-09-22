@@ -19,6 +19,8 @@
 		D213FCD528D8631000B62AAA /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213FCD428D8631000B62AAA /* PostTableViewCell.swift */; };
 		D21BC76628D8AE48000ECE29 /* PhotosCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BC76528D8AE48000ECE29 /* PhotosCollectionView.swift */; };
 		D21BC76928D8AF38000ECE29 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BC76828D8AF38000ECE29 /* ApiManager.swift */; };
+		D2245D8A28DC40E40065F9E5 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2245D8928DC40E30065F9E5 /* AddToDoViewController.swift */; };
+		D2245D8C28DC42260065F9E5 /* CompleteToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2245D8B28DC42260065F9E5 /* CompleteToDoViewController.swift */; };
 		D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D262623B28D8A42400822855 /* PhotosCollectionViewCell.swift */; };
 		D264706228D9963F007144DF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D264706128D9963F007144DF /* .gitignore */; };
 		D284280628D89A470040E304 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284280528D89A470040E304 /* PhotoModel.swift */; };
@@ -46,6 +48,8 @@
 		D213FCD428D8631000B62AAA /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D21BC76528D8AE48000ECE29 /* PhotosCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionView.swift; sourceTree = "<group>"; };
 		D21BC76828D8AF38000ECE29 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D2245D8928DC40E30065F9E5 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		D2245D8B28DC42260065F9E5 /* CompleteToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToDoViewController.swift; sourceTree = "<group>"; };
 		D262623B28D8A42400822855 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		D264706128D9963F007144DF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D284280528D89A470040E304 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				D213FCD028D862AA00B62AAA /* PostModel.swift */,
 				D284280528D89A470040E304 /* PhotoModel.swift */,
 				D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */,
+				D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */,
 				D264706128D9963F007144DF /* .gitignore */,
 			);
 			path = Models;
@@ -135,6 +140,8 @@
 				D213FCBF28D8473000B62AAA /* PostViewController.swift */,
 				D21BC76528D8AE48000ECE29 /* PhotosCollectionView.swift */,
 				D20172C828DB3761002005F1 /* ToDoListTableViewController.swift */,
+				D2245D8928DC40E30065F9E5 /* AddToDoViewController.swift */,
+				D2245D8B28DC42260065F9E5 /* CompleteToDoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,7 +180,6 @@
 				D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */,
 				D297DC5C28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift */,
 				D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */,
-				D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -298,7 +304,9 @@
 				D213FCC028D8473000B62AAA /* PostViewController.swift in Sources */,
 				D21BC76928D8AF38000ECE29 /* ApiManager.swift in Sources */,
 				D21BC76628D8AE48000ECE29 /* PhotosCollectionView.swift in Sources */,
+				D2245D8C28DC42260065F9E5 /* CompleteToDoViewController.swift in Sources */,
 				D29255CA28D9F3EC00EDA4FE /* ToDoModel.swift in Sources */,
+				D2245D8A28DC40E40065F9E5 /* AddToDoViewController.swift in Sources */,
 				D213FCD128D862AA00B62AAA /* PostModel.swift in Sources */,
 				D213FCD528D8631000B62AAA /* PostTableViewCell.swift in Sources */,
 				D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */,
