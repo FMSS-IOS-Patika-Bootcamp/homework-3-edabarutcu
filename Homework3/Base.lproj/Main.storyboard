@@ -389,14 +389,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-T5-8jY" userLabel="ToDo Label">
-                                <rect key="frame" x="10" y="128" width="394" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-T5-8jY" userLabel="ToDo Label">
+                                <rect key="frame" x="321.5" y="128" width="82.5" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fw-Tj-5s6" userLabel="Complete Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fw-Tj-5s6" userLabel="Complete Button">
                                 <rect key="frame" x="164" y="180" width="86" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Complete"/>
                                 <connections>
@@ -406,14 +408,6 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zrz-ga-EN5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7fw-Tj-5s6" firstAttribute="centerX" secondItem="CDb-Oo-7QY" secondAttribute="centerX" id="CUP-mm-4zX"/>
-                            <constraint firstItem="zrz-ga-EN5" firstAttribute="trailing" secondItem="r2n-T5-8jY" secondAttribute="trailing" constant="10" id="XUJ-9K-sYP"/>
-                            <constraint firstItem="r2n-T5-8jY" firstAttribute="top" secondItem="zrz-ga-EN5" secondAttribute="top" constant="40" id="dq9-dc-3VM"/>
-                            <constraint firstItem="r2n-T5-8jY" firstAttribute="centerX" secondItem="CDb-Oo-7QY" secondAttribute="centerX" id="oHn-0M-01o"/>
-                            <constraint firstItem="r2n-T5-8jY" firstAttribute="leading" secondItem="zrz-ga-EN5" secondAttribute="leading" constant="10" id="r0k-6A-m2g"/>
-                            <constraint firstItem="7fw-Tj-5s6" firstAttribute="top" secondItem="r2n-T5-8jY" secondAttribute="bottom" constant="10" id="rBy-yx-IBy"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FjA-7M-gAt"/>
                     <connections>
@@ -423,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEn-vl-ROW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="2817"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="2816.5178571428569"/>
         </scene>
     </scenes>
     <resources>
