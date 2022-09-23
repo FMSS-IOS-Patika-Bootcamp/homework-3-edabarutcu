@@ -81,7 +81,7 @@ class ToDoListTableViewController: UITableViewController {
                 tableView.reloadData()
             }
             catch {
-                showAlert(message: "Could not retrieve the ToDo items from the database!  Please try again.")
+                showAlert(message: "Could not retrieve the ToDo items from the database! Please try again.")
                 return
             }
         }
@@ -89,19 +89,12 @@ class ToDoListTableViewController: UITableViewController {
     // In the tutorial, the code was handled by the add ToDo VC,
     // which isn't the best.  I added the function handler instead.
     func addNewToDo(toDo: ToDoModel) -> Bool {
-        
-        /* Commented out to use Core Data instead
-        if let toDo = toDo as ToDo? {
-            toDos.append(toDo)
-            tableView.reloadData()
-        }*/
         var success : Bool = true
         // Get the managed object context
         if let context  =
             ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext) {
             let toDoItem = ToDoItem(entity: ToDoItem.entity(), insertInto: context)
-            toDoItem.name = toDo.name 
-           // print(toDo.objectID)
+            toDoItem.name = toDo.name
             toDoItem.isImportant = toDo.isImportant
             toDoItem.createdDate = Date()
             // This can also be handled this way:
@@ -142,11 +135,12 @@ class ToDoListTableViewController: UITableViewController {
         if let context  =
             ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext) {
             do {
-                try context.delete(toDoItem)
+              try   context.delete(toDoItem)
             }
             catch {
                 self.showAlert(message: "Data could not be saved!  Please try again.")
             }
+           // getToDos()
         }
     }
     
