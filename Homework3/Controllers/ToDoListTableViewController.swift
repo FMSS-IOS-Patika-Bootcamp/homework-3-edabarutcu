@@ -17,6 +17,7 @@ class ToDoListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getToDos()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -134,12 +135,7 @@ class ToDoListTableViewController: UITableViewController {
     func deleteToDoItem(toDo toDoItem: ToDoItem) {
         if let context  =
             ((UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext) {
-            do {
-              try   context.delete(toDoItem)
-            }
-            catch {
-                self.showAlert(message: "Data could not be saved!  Please try again.")
-            }
+            context.delete(toDoItem)
            // getToDos()
         }
     }

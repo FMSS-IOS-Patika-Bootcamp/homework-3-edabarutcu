@@ -69,7 +69,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="uSp-ct-Cod" secondAttribute="bottom" constant="8" id="B4A-Rd-214"/>
                                     <constraint firstAttribute="height" constant="80" id="DqQ-cU-9hS"/>
@@ -180,10 +180,10 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="BiL-Dj-ltr" customClass="PhotosCollectionViewCell" customModule="Homework3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZVU-b7-4GY">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="215"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jgq-EY-Qqw">
@@ -193,10 +193,10 @@
                                                 <constraint firstAttribute="height" constant="115" id="Of0-kA-sPB"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ds-mG-7TR">
-                                            <rect key="frame" x="0.0" y="115" width="100" height="35"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ds-mG-7TR">
+                                            <rect key="frame" x="0.0" y="115" width="100" height="100"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="35" id="BE2-mr-xjl"/>
+                                                <constraint firstAttribute="height" constant="100" id="BE2-mr-xjl"/>
                                                 <constraint firstAttribute="width" constant="100" id="sX9-sU-XLJ"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -275,6 +275,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="GZd-LI-FzS">
+                            <color key="tintColor" systemColor="tintColor"/>
                             <connections>
                                 <segue destination="RPK-nD-Pxy" kind="show" id="C1L-P0-anW"/>
                             </connections>
@@ -314,7 +315,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPt-kG-D5X" userLabel="Add Button">
                                 <rect key="frame" x="189" y="337" width="36" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" systemColor="tintColor"/>
+                                </state>
                                 <connections>
                                     <action selector="addButtonDidTap:" destination="RPK-nD-Pxy" eventType="touchUpInside" id="E3B-gR-3gl"/>
                                 </connections>
@@ -374,7 +377,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fw-Tj-5s6" userLabel="Complete Button">
                                 <rect key="frame" x="132" y="313" width="144" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Complete"/>
+                                <state key="normal" title="Complete">
+                                    <color key="titleColor" systemColor="tintColor"/>
+                                </state>
                                 <connections>
                                     <action selector="completeButtonDidTap:" destination="vkb-lc-kTJ" eventType="touchUpInside" id="MtF-QF-Elr"/>
                                 </connections>
@@ -406,15 +411,15 @@
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="photo.on.rectangle.angled" catalog="system" width="128" height="100"/>
-        <image name="square.and.pencil" catalog="system" width="32" height="32"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

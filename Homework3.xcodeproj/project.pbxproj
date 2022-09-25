@@ -22,9 +22,7 @@
 		D2245D8A28DC40E40065F9E5 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2245D8928DC40E30065F9E5 /* AddToDoViewController.swift */; };
 		D2245D8C28DC42260065F9E5 /* CompleteToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2245D8B28DC42260065F9E5 /* CompleteToDoViewController.swift */; };
 		D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D262623B28D8A42400822855 /* PhotosCollectionViewCell.swift */; };
-		D264706228D9963F007144DF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D264706128D9963F007144DF /* .gitignore */; };
 		D284280628D89A470040E304 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284280528D89A470040E304 /* PhotoModel.swift */; };
-		D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */; };
 		D29255CA28D9F3EC00EDA4FE /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */; };
 		D29255CD28D9F42E00EDA4FE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */; };
 		D297DC5D28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */; };
@@ -51,9 +49,7 @@
 		D2245D8928DC40E30065F9E5 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
 		D2245D8B28DC42260065F9E5 /* CompleteToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToDoViewController.swift; sourceTree = "<group>"; };
 		D262623B28D8A42400822855 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
-		D264706128D9963F007144DF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D284280528D89A470040E304 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
-		D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		D29255CC28D9F42E00EDA4FE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ToDoItem+CoreDataProperties.swift"; path = "/Users/detaysoft/Desktop/HW/homework-3-edabarutcu/Homework3/Core Data/ToDoItem+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
@@ -110,6 +106,7 @@
 		D213FCBA28D8473000B62AAA /* Homework3 */ = {
 			isa = PBXGroup;
 			children = (
+				D213FCD628D8631E00B62AAA /* Supporting Files */,
 				D29255C628D9F34E00EDA4FE /* Core Data */,
 				D21BC76728D8AF09000ECE29 /* Network */,
 				D213FCD328D862E300B62AAA /* Views */,
@@ -127,8 +124,6 @@
 				D213FCD028D862AA00B62AAA /* PostModel.swift */,
 				D284280528D89A470040E304 /* PhotoModel.swift */,
 				D29255C928D9F3EC00EDA4FE /* ToDoModel.swift */,
-				D264706128D9963F007144DF /* .gitignore */,
-				D213FCD628D8631E00B62AAA /* Supporting Files */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,7 +179,6 @@
 		D29255C628D9F34E00EDA4FE /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				D29255C728D9F37C00EDA4FE /* CoreDataStack.swift */,
 				D297DC5C28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift */,
 				D297DC5B28DAEE25001EBD90 /* ToDoItem+CoreDataProperties.swift */,
 				D29255CB28D9F42E00EDA4FE /* Model.xcdatamodeld */,
@@ -253,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D264706228D9963F007144DF /* .gitignore in Resources */,
 				D213FCC828D8473600B62AAA /* LaunchScreen.storyboard in Resources */,
 				D213FCC528D8473600B62AAA /* Assets.xcassets in Resources */,
 				D213FCC328D8473000B62AAA /* Main.storyboard in Resources */,
@@ -317,7 +310,6 @@
 				D2245D8A28DC40E40065F9E5 /* AddToDoViewController.swift in Sources */,
 				D213FCD128D862AA00B62AAA /* PostModel.swift in Sources */,
 				D213FCD528D8631000B62AAA /* PostTableViewCell.swift in Sources */,
-				D29255C828D9F37C00EDA4FE /* CoreDataStack.swift in Sources */,
 				D284280628D89A470040E304 /* PhotoModel.swift in Sources */,
 				D297DC5E28DAEE25001EBD90 /* ToDoItem+CoreDataClass.swift in Sources */,
 				D262623C28D8A42400822855 /* PhotosCollectionViewCell.swift in Sources */,
