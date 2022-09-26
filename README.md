@@ -2,6 +2,9 @@
 
 # DB Browser for SQLite Screenshot
 
+<img width="807" alt="Screen Shot 2022-09-26 at 14 56 25" src="https://user-images.githubusercontent.com/91742636/192270608-f1b862e9-b731-4999-8d26-3dc90104e5cc.png">
+
+
 <img width="1404" alt="Screen Shot 2022-09-25 at 16 40 29" src="https://user-images.githubusercontent.com/91742636/192146684-703dab74-523c-4446-a03e-c9c5ad41f250.png">
 
 # Code 
